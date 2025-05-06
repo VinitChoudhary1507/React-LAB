@@ -1,0 +1,32 @@
+src/
+├── assets/
+│   ├── images/
+│   │   ├── hangman-0.svg
+│   │   ├── hangman-1.svg
+│   │   ├── hangman-2.svg
+│   │   ├── hangman-3.svg
+│   │   ├── hangman-4.svg
+│   │   ├── hangman-5.svg
+│   │   ├── hangman-6.svg
+│   │   ├── lost.gif
+│   │   └── victory.gif
+│
+├── logic/
+│   └── gameLogic.js         // Contains alphabetCreate, newWordle, newGame
+│
+├── components/
+│   ├── Hangman/
+│   │   ├── HangmanUI.jsx    // Main game layout and logic
+│   │   ├── WordUI.jsx       // Word display component
+│   │   ├── KeyboardUI.jsx   // On-screen alphabet buttons
+│   │   └── ImageUI.jsx      // Displays hangman image based on errors
+│   │
+│   └── Result/
+│       ├── ViktoryPopup.jsx // Victory popup
+│       └── LostPopup.jsx    // Loss popup
+├── Wordle-List/
+         ├── Word.jsx 
+├── App.jsx
+└── index.js
+
+image going blank on ui at 7
