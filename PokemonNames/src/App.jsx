@@ -16,6 +16,8 @@ function App() {
         const response = await axios.get(currentPage)
         setData(response.data.results.map(pokemon => pokemon.name))
         setNextPage(response.data.next)
+        setPreviosPage(response.data.previous)
+        console.log(response)
       }
       catch (error) {
         console.error('Error fetching data:', error);
@@ -23,15 +25,16 @@ function App() {
     }
     getData();
   }, [currentPage]);
+
   useEffect(() => {
     if (data !== null) {
-      console.log('Updated data:', data);
-      console.log('Next Page', nextPage);
     }
   }, [data, currentPage]);
+
   if (!data) {
     return <p>Loading/...</p>
   }
+
   const PageChange = (page) => {
     if (page === prevPage) {
       setCurrentPage(prevPage)
@@ -41,7 +44,6 @@ function App() {
       setCurrentPage(nextPage)
     }
   }
-  console.log("hello")
   return (
     <>
       <div style={{ margin: "10px" }}>
