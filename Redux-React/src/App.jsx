@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-    <Read></Read>
+
          <Counter/>   
     </>
   )

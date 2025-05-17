@@ -10,4 +10,3 @@ export const Read = () => {
   );
 };
 
-// export default Counter;

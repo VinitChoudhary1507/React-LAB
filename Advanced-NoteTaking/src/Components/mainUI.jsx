@@ -36,8 +36,6 @@ const MainUI = () => {
   
     setNotes(filteredtags)
   
-
-
   };
   const handleTagsEdit = () => {
     console.log("hello")
